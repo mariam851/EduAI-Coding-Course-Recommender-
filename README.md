@@ -82,10 +82,10 @@ pip install -r requirements.txt
 
 Example outputs from the system:
 
-![Knowledge Heatmap](results/figures/Knowledge State Heatmap.png)  
+![Knowledge Heatmap](results/figures/Knowledge-State-Heatmap.png)
 *Figure 1: Knowledge State Heatmap showing mastery levels across problems.*
 
-![Learning Curve](results/figures/Student Learning Progress.png)  
+![Learning Curve](results/figures/Student-Learning-Progress.png)
 *Figure 2: Student Learning Curve with EMA and cumulative accuracy.*
 
 ## Research Implications
