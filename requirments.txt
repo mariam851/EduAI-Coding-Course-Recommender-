@@ -1,0 +1,125 @@
+# Requirements
+
+## Intelligent Recommendation System for Coding Courses Based on Learner Behavior
+
+This document describes the technical, computational, and organizational requirements necessary to reproduce, extend, and evaluate the proposed intelligent recommendation system.
+
+---
+
+## 1. Programming Language
+
+- **Python ≥ 3.9**
+
+Python is selected due to its strong ecosystem for:
+- Machine Learning and Deep Learning
+- Sequential modeling
+- Scientific computing
+- Research reproducibility
+
+---
+
+## 2. Core Libraries
+
+### 2.1 Machine Learning & Deep Learning
+
+- **PyTorch**
+  - Implementation of GRU-based Knowledge Tracing model
+  - Training and evaluation of sequential neural networks
+
+- **NumPy**
+  - Numerical computations
+  - Efficient array operations
+
+- **Scikit-learn**
+  - Evaluation metrics (AUC, accuracy, precision, recall)
+  - Data preprocessing utilities
+
+---
+
+### 2.2 Data Processing & Analysis
+
+- **Pandas**
+  - Handling large-scale interaction logs
+  - Dataset manipulation and aggregation
+
+---
+
+### 2.3 Visualization & Learning Analytics
+
+- **Matplotlib**
+  - Learning progress curves
+  - EMA and cumulative accuracy plots
+
+- **Seaborn**
+  - Knowledge State Heatmap visualization
+  - High-level statistical graphics for interpretability
+
+---
+
+## 3. Project Structure Requirements
+
+The project follows a modular and research-oriented structure to ensure clarity, scalability, and academic reproducibility.
+
+
+4. Dataset Requirements
+
+4.1 Dataset Characteristics
+
+The system assumes an educational interaction dataset with the following schema:
+- student_id
+- problem_id
+- timestamp
+- correctness (binary: 0 / 1)
+
+4.2 Dataset Properties
+- Sequential and time-ordered
+- Sparse interaction matrix
+- Implicit feedback (behavior-based inference)
+
+4.3 Data Availability Policy
+Important Notice:
+The data/ directory is intentionally excluded from the public GitHub repository due to:
+- Learner privacy protection
+- Ethical research standards
+- Dataset licensing restrictions
+
+Researchers wishing to reproduce results must:
+- Use a licensed educational dataset
+- Or generate a synthetic dataset with identical structure
+
+This decision aligns with best practices followed by top-tier academic institutions.
+
+5. Hardware Requirements
+
+Minimum Requirements:
+- CPU-based execution
+- 8 GB RAM
+
+Recommended for Research-Scale Experiments:
+- GPU (NVIDIA CUDA-enabled)
+- ≥ 16 GB RAM
+
+> GPU acceleration significantly reduces training time for GRU-based models on long learner sequences.
+
+6. Reproducibility Considerations
+- Fixed random seeds are recommended
+- Consistent train-validation-test splits should be used
+- Model checkpoints should be saved during training
+- Hyperparameters should be documented in the experiment logs
+
+7. Ethical & Academic Compliance
+This project is designed in compliance with:
+- Educational data mining ethics
+- Reproducible research principles
+- Transparent machine learning standards
+
+> The system is intended for research and educational use, not for automated high-stakes decision-making.
+
+8. Summary
+The requirements outlined above ensure that the project:
+- Meets academic research standards
+- Can be reliably reproduced and extended
+- Is suitable for evaluation in top-tier university environments
+- Aligns with ethical and legal data handling practices
+
+This foundation enables future researchers to build upon the system with confidence and clarity.
